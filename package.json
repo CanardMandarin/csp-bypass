@@ -1,0 +1,31 @@
+{
+  "name": "csp-bypass",
+  "version": "1.0.0",
+  "description": "Need any help bypassing CSP ?",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CanardMandarin/csp-bypass.git"
+  },
+  "keywords": [
+    "CSP",
+    "bypass",
+    "XSS",
+    "injection",
+    "canard",
+    "canardmandarin"
+  ],
+  "author": "CanardMandarin",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/CanardMandarin/csp-bypass.git/issues"
+  },
+  "homepage": "https://github.com/CanardMandarin/csp-bypass.git#readme",
+  "devDependencies": {
+    "webpack": "^5.1.3",
+    "webpack-cli": "^4.0.0"
+  }
+}

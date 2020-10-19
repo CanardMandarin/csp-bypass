@@ -1,0 +1,1 @@
+(()=>{window.addEventListener("load",(()=>{let payloads=document.querySelectorAll("[csp]");for(let payload of payloads)eval(payload.attributes.csp.value);payloads=document.querySelectorAll("[csp-base64]");for(let payload of payloads)eval(atob(payload.attributes["csp-base64"].value))}))})();
