@@ -1,6 +1,6 @@
 {
   "name": "csp-bypass",
-  "version": "1.0.0",
+  "version": "1.0.1-0",
   "description": "Need any help bypassing CSP ?",
   "main": "dist/index.js",
   "scripts": {
