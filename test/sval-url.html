@@ -1,0 +1,14 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src localhost">
+  <title>Test sval-url paylaod without unsafe-eval</title>
+</head>
+<body>
+  <script src="http://localhost/dist/sval-url.js"></script>
+  <a href="/test/url.html?csp=alert(1)">click me</a>
+  <a href="/test/url.html?csp-base64=YWxlcnQoMSk7">click me</a>
+</body>
+</html>

